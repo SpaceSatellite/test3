@@ -29,7 +29,6 @@ for k in range(1,101):
         else:
             MA[i].append(sum(close[0+i-1:k+i-1])/k)
 
-
 id = [[i] for i in range(n)]
 
 data = list(zip(id,MA))
