@@ -10,9 +10,9 @@ all_ma_names = [f'ma{i}' for i in range(1,101)]
 
 for k in all_ma_names:
     # # clear all ma_x tables before writing
-    # z = f'drop table {k}_x'
-    # cur.execute(z)
-    # con.commit()
+    z = f'drop table {k}_x'
+    cur.execute(z)
+    con.commit()
 
     local_ma_names = ['id primary key']
     for l in all_ma_names[all_ma_names.index(k)+1:len(all_ma_names)]:
